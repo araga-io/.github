@@ -1,0 +1,32 @@
+name: Tarefa de engenharia
+description: Trabalho delimitado para humano ou agente
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Objetivo e contexto
+      description: Qual problema resolver?
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critérios de aceitação
+      description: Como verificar que terminou?
+    validations:
+      required: true
+  - type: dropdown
+    id: risk
+    attributes:
+      label: Risco
+      options: ["R0 - docs/baixo", "R1 - normal", "R2 - sensível", "R3 - produção/permissão"]
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Escopo permitido e arquivos proibidos
+  - type: textarea
+    id: tests
+    attributes:
+      label: Testes e evidências exigidas
